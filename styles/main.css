@@ -3,8 +3,19 @@
   font-family:  'Segoi UI' , Helvetica, Arial, sans-serif;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.logo > img{
+    height: 75px;
+}
+
 .container{
     width: 80vw;
+    max-width: 650px;
     height: 60vh;
     margin: auto;
     margin-top: 5%;
@@ -24,10 +35,16 @@
     color: #E8258E;
 }
 
+.fields__title{
+    display: flex;
+    justify-content: center;
+}
+
 #field__title{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
 .fields__textboxs{
@@ -41,6 +58,11 @@
     height: 40px;
     border: 1px solid gray;
     border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding: .2rem;
+}
+
+#field__remember {
     margin-bottom: 1rem;
 }
 
