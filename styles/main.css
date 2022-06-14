@@ -19,12 +19,10 @@
     height: 60vh;
     margin: auto;
     margin-top: 5%;
-    border: 1px solid gray;
+    border: 1px solid #999999;
     background-color: #FFF9FE;
     border-radius: 1rem;
-    box-shadow:  .6rem .5rem 1.5rem .2rem #414141;
--webkit-box-shadow:  .6rem .5rem 1.5rem .2rem #414141;
--moz-box-shadow: .6rem .5rem 1.5rem .2rem #414141; 
+    box-shadow:  .1rem .2rem .4rem .16rem #a2a2a2;
 }
 
 .fields{
@@ -57,9 +55,9 @@
 .fields__textboxs > input{
     height: 40px;
     border: 1px solid gray;
-    border-radius: .5rem;
+    border-radius: .3rem;
     margin-bottom: 1rem;
-    padding: .2rem;
+    padding: .2rem .2rem .2rem .8rem;
 }
 
 #field__remember {
