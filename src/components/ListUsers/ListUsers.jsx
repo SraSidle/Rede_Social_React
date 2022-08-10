@@ -41,7 +41,7 @@ function ListUsers({ updateList }) {
                  <button
           id="button-search"
           type="submit"
-        >Pesquisar</button>
+        ><i className="bi bi-search"></i></button>
             </form>
         </div>
       {users.map((user, index) => (

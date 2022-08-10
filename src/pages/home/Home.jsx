@@ -1,5 +1,5 @@
 import "../home/Home.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "../../components/Header/Header";
 import ListUsers from "../../components/ListUsers/ListUsers";
 import Publicacoes from "../../components/Publicacoes/Publicacoes";
@@ -24,7 +24,8 @@ function Home() {
     });
     setnewPublic(response); // setUpdateList(response); //((prev) => !prev)
   };
-
+ 
+  UsersServices.getPublicacoes().then(setPublicacoes);
   // useEffect(() => {
   //   UsersServices.getPublicacoes().then(setPublicacoes);
   // });
@@ -33,12 +34,13 @@ function Home() {
     <div>
       <Header />
       <div className="nova-publicacao">
+        <div className="nova-publicacao-container">
         <img
           className="foto-perfil"
           src="https://th.bing.com/th/id/R.136f218ca666d0f9ef99a9c75e11be04?rik=mSbyqjAlNrFe4w&riu=http%3a%2f%2f3.bp.blogspot.com%2f_vG0fWsry7w0%2fTQIK7sHG6hI%2fAAAAAAAAAGM%2fkFTq_yc-EqY%2fw1200-h630-p-k-no-nu%2f99870_D00680b_display.jpg&ehk=pVqB5XHSDjO0HeGI8PlMsZfujVuNjuIu7Vu089PN1eM%3d&risl=&pid=ImgRaw&r=0"
         />
         <div className="publicacao-direita">
-          <h2>Boas vindas, Sra Sidle</h2>
+          <h2 className="saudacao">Boas vindas, Sra Sidle</h2>
           <form
             onSubmit={(event) => {
               event.preventDefault();
@@ -55,11 +57,12 @@ function Home() {
             <button type="submit">Publicar</button>
           </form>
         </div>
+        </div>
       </div>
-      <ListUsers updateList={setnewPublic} />
-      {publicacoes.map((publicacao, index) => {
-        <Publicacoes key={`publicacao--${index}`} publicacao={publicacao} />;
-      })}
+      <ListUsers updateList={() => setnewPublic()} />
+      {publicacoes.map((publicacao, index) => (
+        <Publicacoes key={`publicacao--${index}`} publicacao={publicacao} />
+      ))};
     </div>
   );
 }

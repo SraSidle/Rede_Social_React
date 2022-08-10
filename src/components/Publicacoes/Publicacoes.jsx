@@ -2,8 +2,8 @@ import "./Publicacoes.css";
 
 function Publicacoes({publicacao}){
     return(
-        <div>
-           <h2>{publicacao.texto}</h2> 
+        <div className="publicacoes" key={`"publicacao"--${"index"}`}>
+           <p>{publicacao.texto}</p> 
         </div>
     )
 }

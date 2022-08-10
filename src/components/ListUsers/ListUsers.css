@@ -8,7 +8,7 @@
 }
 
 .pesquisar__user{
-    height: 7.5rem;
+    max-height: 6.5rem;
     display: flex;
     align-items: center;
 }
@@ -17,7 +17,7 @@
     height: 2.5rem;
     width: 15rem;
     padding: .2rem;
-    margin-right: .3rem;
+    margin: 1rem .3rem 0 0;
     border-radius: 1rem;
     border: 1px solid gray;
     background-color: #d0d0d0;
@@ -27,3 +27,15 @@
 .pesquisar__user > form > input:focus{
     outline: 0;
 } 
+
+#button-search{
+    padding: .8rem;
+    background-color: #d0d0d0;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: .9rem;
+}
+
+#button-search:hover{
+    background-color: #cccccc;
+}
