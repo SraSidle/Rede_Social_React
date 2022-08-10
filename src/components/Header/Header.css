@@ -1,4 +1,6 @@
 .header{
+   /* min-height: 6.49rem; */
+    max-height: 6.5rem;
     display: flex;
     align-items: center;
     background-color: #dbdbdd;
@@ -8,9 +10,20 @@
 .titulo-app{
     font-size: xx-large;
     font-weight: 900;
+    font-family: verdana;/*Arial Narron, Verdana, Geneva, Tahoma, sans-serif*/
+    margin: .5rem 0;
     color: #E8258E;
 }
 
 nav {
     display: flex;
+    margin-left: 15%;
+}
+
+nav > ul {
+    margin: 0 1.2rem ;
+    padding: 0.8rem;
+    border-radius: .4rem;
+    background-color: #ABB9D9;
+   color: white;
 }
