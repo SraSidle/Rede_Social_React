@@ -1,0 +1,36 @@
+.usuario{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    border: 1px solid pink;
+}
+
+.img__nickname{
+    display: flex;
+    align-items: center;
+}
+
+.nickname {
+    font-weight: bold;
+    font-size:medium;
+    margin-left: .2rem;
+}
+
+.name {
+    margin-left: .4rem;
+}
+
+.mini_perfil{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.descricao{
+    max-width: 100%;
+    color: gray;
+}
+
+p{
+    margin: 0;
+}

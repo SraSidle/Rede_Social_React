@@ -1,0 +1,29 @@
+.nova-publicacao{
+    width: 50%;
+    margin:2rem 5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.foto-perfil{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.publicacao-direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.publicacao-direita > form > input {
+    width: 110%;
+}
+
+.publicacao-direita > form > button {
+    width: 4rem;
+    margin:.3rem 35% ;
+}

@@ -1,0 +1,29 @@
+.listUsers {
+    margin-left: 60%;
+    width: 25%;
+    position: absolute;
+    background-color: #dbdbdb;
+    top: 0;
+    right: 2rem;
+}
+
+.pesquisar__user{
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar__user > form > input {
+    height: 2.5rem;
+    width: 15rem;
+    padding: .2rem;
+    margin-right: .3rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    background-color: #d0d0d0;
+    outline: 0;
+}
+
+.pesquisar__user > form > input:focus{
+    outline: 0;
+} 

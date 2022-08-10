@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #dbdbdd;
+    padding: 1rem;
+}
+
+.titulo-app{
+    font-size: xx-large;
+    font-weight: 900;
+    color: #E8258E;
+}
+
+nav {
+    display: flex;
+}
