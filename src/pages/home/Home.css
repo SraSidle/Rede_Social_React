@@ -1,10 +1,14 @@
+.home{
+    position: relative;
+}
 .nova-publicacao{
     width: 50%;
     margin:2rem 5rem;
     padding: 1rem;
     border-radius: .5rem;
     background-color: #FFFFFF;
-    box-shadow:  .6rem .5rem 1.5rem .2rem #414141
+    box-shadow:  .6rem .5rem 1.5rem .2rem #414141;
+    position: relative;
 }
 
 .nova-publicacao-container{
@@ -59,3 +63,44 @@
 .publicacao-direita > form > button:hover{
     background-color: #a2b4de;
 }
+
+.Modal--create--overlay {
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 9999;
+    margin: 1rem;
+  }
+  
+  .Modal--create {
+    width: 14.5rem;
+    background-color: #43bf00;
+    font-weight: 600;
+    font-size: medium;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: modalCreate 2s;
+  }
+  
+  .end {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.4rem 0.4rem 0 0;
+  }
+  
+  .Modal--create > p {
+    margin: 0.5rem 1rem 1rem 1rem;
+  }
+  
+  @keyframes modalCreate {
+    0% {
+      transform: translate3d(50px, 0px, 0px);
+    }
+    100% {
+      transform: translate3d(-50px, 0px, 0px);
+    }
+  }

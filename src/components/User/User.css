@@ -1,8 +1,9 @@
 .usuario{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    background-color: #FFFFFF;
     padding: 0.2rem;
-    border: 1px solid pink;
+    border: 1px solid #dbdbdb;
 }
 
 .img__nickname{
@@ -14,10 +15,12 @@
     font-weight: bold;
     font-size:medium;
     margin-left: .2rem;
+    color: #4666b1;
 }
 
 .name {
     margin-left: .4rem;
+    color:  #ABB9D9;
 }
 
 .mini_perfil{

@@ -18,8 +18,8 @@ function ListUsers({ updateList }) {
   };
 
   useEffect(() => {
-   UsersServices.getlista().then(setUsers);
-  }, [updateList])
+    UsersServices.getlista().then(setUsers);
+  }, [])
 
   return (
     <div className="listUsers">
@@ -44,9 +44,11 @@ function ListUsers({ updateList }) {
         ><i className="bi bi-search"></i></button>
             </form>
         </div>
-      {users.map((user, index) => (
+        <div className="todos-usuarios">
+           {users.map((user, index) => (
         <User key={`user--${index}`} user={user} />
       ))}
+        </div>    
     </div>
   );
 }

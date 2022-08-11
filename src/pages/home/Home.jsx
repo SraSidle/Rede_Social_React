@@ -24,6 +24,17 @@ function Home() {
     });
     setnewPublic(response); // setUpdateList(response); //((prev) => !prev)
   };
+
+  const handlerCreatePublic = async () => {
+    if (newPublic) {
+      await create(newPublic);
+      document.querySelector(".Modal--create--overlay").style.display = "flex";
+      setTimeout(() => {
+        document.querySelector(".Modal--create--overlay").style.display =
+          "none";
+      }, 3e3);
+    }
+  };
  
   UsersServices.getPublicacoes().then(setPublicacoes);
   // useEffect(() => {
@@ -31,21 +42,27 @@ function Home() {
   // });
 
   return (
-    <div>
+    <div className="home">
+      <div className="Modal--create--overlay">
+        <div className="Modal--create">
+          <i className="bi bi-info-circle"></i>
+          <p>Recado Publicado com sucesso!</p>
+        </div>
+      </div>
       <Header />
       <div className="nova-publicacao">
         <div className="nova-publicacao-container">
         <img
           className="foto-perfil"
           src="https://th.bing.com/th/id/R.136f218ca666d0f9ef99a9c75e11be04?rik=mSbyqjAlNrFe4w&riu=http%3a%2f%2f3.bp.blogspot.com%2f_vG0fWsry7w0%2fTQIK7sHG6hI%2fAAAAAAAAAGM%2fkFTq_yc-EqY%2fw1200-h630-p-k-no-nu%2f99870_D00680b_display.jpg&ehk=pVqB5XHSDjO0HeGI8PlMsZfujVuNjuIu7Vu089PN1eM%3d&risl=&pid=ImgRaw&r=0"
+          alt="foto de perfil da pessoa"
         />
         <div className="publicacao-direita">
-          <h2 className="saudacao">Boas vindas, Sra Sidle</h2>
+          <h2 className="saudacao">Boas vindas, Sara</h2>
           <form
             onSubmit={(event) => {
               event.preventDefault();
-              create();
-              // handlerCreateTask();
+              handlerCreatePublic();
             }}
           >
             <input

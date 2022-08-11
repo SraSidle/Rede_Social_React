@@ -2,14 +2,19 @@
     margin-left: 60%;
     width: 25%;
     position: absolute;
-    background-color: #dbdbdb;
     top: 0;
     right: 2rem;
+}
+
+.todos-usuarios{
+    box-shadow:  0rem 0rem 1.5rem 0rem #414141;
 }
 
 .pesquisar__user{
     max-height: 6.5rem;
     display: flex;
+    margin-bottom: 2rem;
+    background-color: #dbdbdb;
     align-items: center;
 }
 
